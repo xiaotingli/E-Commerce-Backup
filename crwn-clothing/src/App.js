@@ -48,10 +48,13 @@ class App extends React.Component {
     );
   }
 }
+
+//State is the root reducer
 const mapStateToProps = ({ user }) =>({
   currentUser: user.currentUser
 });
 
+//will add setCurrentUser function to the props
 const mapDispatchToProps = dispatch => ({
   setCurrentUser: user => dispatch(setCurrentUser(user))
 });
